@@ -34,7 +34,7 @@
 ![Sample Image](public/Screenshot%20.png)
 
 ## Deployment
-
+link:http://localhost:5173/
 The application is deployed and can be accessed here : [Blog App](https://react-router-domtask.netlify.app/).
 
 ## Contributing
