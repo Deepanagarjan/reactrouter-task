@@ -11,11 +11,10 @@
   - [Deployment](#deployment)
   - [Contributing](#contributing)
 
-
-
-
 ## Folder Structure
-* The project structure is organized as follows:
+
+- The project structure is organized as follows:
+
 ```
 - src/: Source code for the React application.
 - components/: React components for different sections.
@@ -31,13 +30,13 @@
 ```
 
 ## Sample Image
-![Sample Image](public/scr.png)
+
+![Sample Image](public/Screenshot%20.png)
 
 ## Deployment
 
 The application is deployed and can be accessed here : [Blog App](https://netlify-react-router.netlify.app/).
 
-
-
 ## Contributing
-* Contributions are welcome! If you find any issues or have improvements, feel free to create a pull request.
+
+- Contributions are welcome! If you find any issues or have improvements, feel free to create a pull request.

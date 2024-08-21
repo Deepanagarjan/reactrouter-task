@@ -1,4 +1,4 @@
-// import React from "react";
+import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbartask from "./Components/task/Navbar";
 import All from "./Components/task/All";
@@ -12,23 +12,22 @@ const App = () => {
   let data = [
     {
       id: 1,
-      title: "40 Java Interview Questions for Freshers with Clear & Concise Answers",
+      title:
+        "40 Java Interview Questions for Freshers with Clear & Concise Answers",
       head: "Data science",
-      description:
-        "By Tushar Vinocha",
-      image:
-        "https://www.guvi.in/blog/wp-content/uploads/2023/11/Feature-image-Top-High-Paying-Non-Coding-https://www.guvi.in/blog/wp-content/uploads/2023/04/feature.webp-in-Data-Science.webp",
+      description: "By Tushar Vinocha",
+      image: "https://www.guvi.in/blog/wp-content/uploads/2023/04/feature.webp",
       date: "09 August 2024",
       comment: "5 min Read",
     },
     {
       id: 2,
-      title: "10 Best Data Science Frameworks in 2024Top 30 Mini Project Ideas For College Students [UPDATED]",
+      title:
+        "10 Best Data Science Frameworks in 2024Top 30 Mini Project Ideas For College Students [UPDATED]",
       head: "Data science",
-            description:
-      "By Srinithi Sankar",
+      description: "By Srinithi Sankar",
       image:
-        "https://www.guvi.in/blog/wp-content/uploads/2023/07/best-data-science-frameworks-1https://www.guvi.in/blog/wp-content/uploads/2015/02/blog-2-e1626109662385.png536x804.webp",
+        "https://www.guvi.in/blog/wp-content/uploads/2015/02/blog-2-768x402.png",
       date: "Aug 09, 2024",
       comment: "6 Min Read",
     },
@@ -36,53 +35,46 @@ const App = () => {
       id: 3,
       title: "How to Render an Array of Objects in React? [in 3 easy steps]",
       head: "Data science",
-      description:
-        "By Tarun Singh",
+      description: "By Tarun Singh",
       image:
-        "https://www.guvi.in/blog/wp-content/uploads/2023/11/feature-image-product-based-companies-for-data-science-freshers.webphttps://www.guvi.in/blog/wp-content/uploads/2022/12/Render-array-of-objects-in-ReactJs.png",
+        "https://www.guvi.in/blog/wp-content/uploads/2022/12/Render-array-of-objects-in-ReactJs.png",
       date: "Aug 06, 2024",
       comment: "7 Min Read",
     },
     {
       id: 4,
-      title:
-        "Top 10 Unique Project Ideas for College Students",
-        head: "Data science",
-      description:
-        "By Tarun Singh",
+      title: "Top 10 Unique Project Ideas for College Students",
+      head: "Data science",
+      description: "By Tarun Singh",
       image:
-        "https://www.guvi.in/blog/wp-content/uploads/2023/06/feature-image-unique-project-ideas.jpg ",
+        "https://www.guvi.in/blog/wp-content/uploads/2023/06/feature-image-unique-project-ideas.jpg",
       comment: " 7 min Read",
     },
     {
       id: 5,
-      title:
-        "7 Must-Watch Data Science Focused YouTube Channels for Effective Use ReactJS to Fetch and Display Data from API – 5 Simple Steps",
-        head: "Data science",
-      description:
-        "By Tarun Singh",
+      title: "Use ReactJS to Fetch and Display Data from API – 5 Simple Steps",
+      head: "Data science",
+      description: "By Tarun Singh",
       image:
         "https://www.guvi.in/blog/wp-content/uploads/2022/12/Fetch-Data-using-API-in-React.Js.png",
       date: "Jul 23, 2024",
-      comment: "No Comments",
+      comment: "5 min Read",
     },
     {
       id: 6,
-      title: "Best Data Science Books to Learn in 2024",
+      title: "15 Best Mechanical Engineering Project Ideas in 2024",
       head: "Data science",
-      description:
-        "Today, we’re going to talk about something really cool: data science. It’s all about using",
+      description: "By Meghana D",
       image:
-        "https://www.guvi.in/blog/wp-content/uploads/2023/10/Feature-image-Best-books-to-learn-data-science.webp",
-      date: "26 October 2023",
-      comment: "No Comments",
+        "https://www.guvi.in/blog/wp-content/uploads/2023/03/Untitled-design-41.jpg",
+      date: "23 july 2024",
+      comment: "5 min Read",
     },
     {
       id: 7,
-      title: "Top Product-Based Companies for Data Scientists in 2024",
-      head: "Data science",
-      description:
-        "We all know about the kind of buzz surrounding data science right now, it is",
+      title:
+        "30 Best JavaScript Project Ideas For You [3 Bonus Portfolio Projects]",
+      description: "By Saakshi Priyadarshini",
       image:
         "https://www.guvi.in/blog/wp-content/uploads/2023/09/Feature-image-Top-Product-Based-Companies-for-Data-Scientists.webp",
       date: "5 October 2023",
@@ -90,26 +82,25 @@ const App = () => {
     },
     {
       id: 8,
-      title: "Useful Python Libraries & Tools for Data Science Beginners",
+      title:
+        "10 Innovative Project Ideas for Students to Boost Creativity and Skills",
       head: "Data science",
-      description:
-        "In a world filled with information, knowing how to understand and use data is super",
+      description: "By Saakshi Priyadarshini",
       image:
-        "https://www.guvi.in/blog/wp-content/uploads/2023/09/Feature-image-Useful-Python-Libraries-and-Tools-For-Data-Science-Beginners.webp",
-      date: "29 September 2023 ",
-      comment: "No Comments",
+        "https://www.guvi.in/blog/wp-content/uploads/2023/02/animated-javascript-project-image.jpg",
+      date: "23 july 2024 ",
+      comment: "6 min Read",
     },
     {
       id: 9,
       title:
         "Extraordinary Data Science Projects for Beginners As Well as Veterans",
       head: "Data science",
-      description:
-        "As the demand for data and the people that can conquer it, i.e. Data Scientists",
+      description: "By Meghana D",
       image:
-        "https://www.guvi.in/blog/wp-content/uploads/2023/08/Data-Science-project-showcase.webp",
-      date: "28 August 2023",
-      comment: "No Comments",
+        "https://www.guvi.in/blog/wp-content/uploads/2023/11/featured-image.png",
+      date: "23 july 2024",
+      comment: "8 min Read",
     },
     {
       id: 10,

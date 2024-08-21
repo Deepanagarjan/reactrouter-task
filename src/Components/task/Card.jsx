@@ -9,7 +9,7 @@ const Card = ({ item, index }) => {
           <h5 className="card-title">{item.head}</h5>
           <h5 className="card-title">{item.title}</h5>
           <p className="card-text">{item.description}</p>
-          <p className="card-sm-txt">Read More » </p>
+          {/* <p className="card-sm-txt">Read More » </p> */}
         </div>
         <div className="card-footer ps-4 py-2 bg-transparent">
           <p className="txt my-2">
