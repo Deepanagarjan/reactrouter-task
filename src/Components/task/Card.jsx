@@ -1,8 +1,9 @@
-import React from "react";
+// import React from "react";
 
-const Card = ({ item, index }) => {
+const Card = ({ key, item }) => {
+  console.log(key, item);
   return (
-    <div className="col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4" key={index}>
+    <div className="col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4" key={key}>
       <div className="card h-100">
         <img src={item.image} className="card-img-top mb-2" alt="card_img" />
         <div className="card-body px-4 mt-3">

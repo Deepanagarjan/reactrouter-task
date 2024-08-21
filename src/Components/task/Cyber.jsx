@@ -1,7 +1,7 @@
-import React from 'react';
+// import React from 'react';
 import Card from './Card';
-const Cyber = ({data}) => {
-  const cyber = data.filter((item) => item.head === "Cyber security");
+const Cyber = (data) => {
+  const cyber = data.data.filter((item) => item.head === "Cyber security");
   return (
     <div className="container">
       <div className="row py-5 d-flex justify-content-center">

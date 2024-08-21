@@ -1,11 +1,12 @@
-import React from "react";
+// import React from "react";
 import Card from "./Card";
 
-const All = ({ data }) => {
+const All = (value) => {
+  console.log(value.value);
   return (
     <div className="container">
       <div className="row py-5 d-flex justify-content-center">
-        {data.map((item, index) => (
+        {value.value.map((item, index) => (
           <Card key={index} item={item} />
         ))}
       </div>

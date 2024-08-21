@@ -1,8 +1,8 @@
-import React from 'react';
-import Card from './Card';
+// import React from 'react';
+import Card from "./Card";
 
-const Career = ({data}) => {
-  const career = data.filter((item) => item.head === "Career");
+const Career = (data) => {
+  const career = data.data.filter((item) => item.head === "Career");
   return (
     <div className="container">
       <div className="row py-5 d-flex justify-content-center">
@@ -10,7 +10,7 @@ const Career = ({data}) => {
         {career.map((item, index) => {
           return (
             <>
-              <Card item={item} index={index} />
+              <Card key={index} item={item} />
             </>
           );
         })}

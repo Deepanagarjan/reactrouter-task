@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbartask from "./Components/task/Navbar";
 import All from "./Components/task/All";
@@ -323,7 +323,7 @@ const App = () => {
         </div>
 
         <Routes>
-          <Route path="/" element={<All data={data} />} />
+          <Route path="/" element={<All value={data} />} />
           <Route path="/fullstack" element={<Fullstack data={data} />} />
           <Route path="/datascience" element={<Datascience data={data} />} />
           <Route path="/cybersecurity" element={<Cyber data={data} />} />
